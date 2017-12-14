@@ -8,4 +8,7 @@ if defined?(ActiveRecord::Migrator) && ActiveRecord::Migrator.needs_migration?
 end
 
 use LandmarksController
+use FiguresController
+use TitlesController
+use Rack::MethodOverride #allows us to edit with patch
 run ApplicationController
